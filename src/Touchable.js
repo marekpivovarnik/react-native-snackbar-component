@@ -4,13 +4,13 @@ import {
   View,
   TouchableOpacity,
   TouchableNativeFeedback,
-  ViewPropTypes,
 } from 'react-native';
 import {
   IS_ANDROID,
   IS_LT_LOLLIPOP,
   noop,
 } from './utils';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 const Touchable = ({ onPress, style, children }) => {
   if (IS_ANDROID && !IS_LT_LOLLIPOP) {
